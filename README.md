@@ -4,7 +4,7 @@ Simple and straightforward guide for unison install and set it up to watch chang
 
 ## Install unison
 
-sudo apt-get install -y ocaml opam
+`sudo apt-get install -y ocaml opam`
 
 opam init
 
