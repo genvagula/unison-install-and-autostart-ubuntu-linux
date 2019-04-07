@@ -14,7 +14,7 @@ Simple and straightforward guide for Unison install and set it up to watch chang
 
 `git checkout 2.48.4`
 
-`make NATIVE=true UISTYLE=text
+`make NATIVE=true UISTYLE=text`
 
 `sudo install src/unison /usr/local/bin`
 
@@ -58,7 +58,7 @@ auto = true
 
 # Create service to start it at the boot
 
-`sudo nano /lib/systemd/system/unison.service
+`sudo nano /lib/systemd/system/unison.service`
 
 ## Paste content:
 
