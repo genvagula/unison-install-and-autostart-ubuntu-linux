@@ -59,7 +59,7 @@ auto = true
 --------------
 ```
 
-## Create service to start it at the boot
+## Create service to start Unison at the boot
 
 `sudo nano /lib/systemd/system/unison.service`
 
@@ -91,17 +91,17 @@ WantedBy=multi-user.target
 
 `sudo systemctl enable unison.service`
 
-## Control the app
+## Control the service
 
 ### Reload
 
 `sudo systemctl daemon-reload`
 
-### Start the server
+### Start
 
 `sudo systemctl start unison.service`
 
-### Stop the server
+### Stop
 
 `sudo systemctl stop unison.service`
 
