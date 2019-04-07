@@ -30,7 +30,7 @@ Simple and straightforward guide for Unison install and set it up to watch chang
 
 - Create content like this:
 
---------------
+`--------------
 
 # Roots of the synchronization
 root = /home/folder1
@@ -54,7 +54,7 @@ logfile = /home/logs/unison-sync-log.txt
 
 auto = true
 
---------------
+--------------`
 
 # Create service to start it at the boot
 
