@@ -28,33 +28,33 @@ Simple and straightforward guide for Unison install and set it up to watch chang
 
 `sudo nano /home/[YOUR USER FOLDER NAME]/.unison/profile.prf`
 
-- Create content like this:
+Create content:
 
-`--------------
+`--------------`
 
-# Roots of the synchronization
-root = /home/folder1
-root = /home/folder2
+`#Roots of the synchronization`
+`root = /home/folder1`
+`root = /home/folder2`
 
-# Paths to synchronize 
+`#Paths to synchronize `
 
-# files
-path = file1.json
-path = file2.json
-path = file3.json
+`#files`
+`path = file1.json`
+`path = file2.json`
+`path = file3.json`
 
-ignore = Name filename.txt
+`ignore = Name filename.txt`
 
-# dirs
-path = foldername
+`#dirs`
+`path = foldername`
 
-# Logging
-log = true
-logfile = /home/logs/unison-sync-log.txt
+`#Logging`
+`log = true`
+`logfile = /home/logs/unison-sync-log.txt`
 
-auto = true
+`auto = true`
 
---------------`
+`--------------`
 
 ## Create service to start it at the boot
 
