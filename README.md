@@ -62,6 +62,7 @@ auto = true
 
 ### Paste content:
 
+```
 --------------
 
 [Unit]
@@ -81,6 +82,7 @@ RestartSec=0
 WantedBy=multi-user.target
 
 --------------
+```
 
 ### Enable
 
