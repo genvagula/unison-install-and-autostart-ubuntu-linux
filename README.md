@@ -22,9 +22,9 @@ Simple and straightforward guide for Unison install and set it up to watch chang
 
 `sudo pip install pyinotify`
 
-# Sync two folders with Unison
+## Sync two folders with Unison
 
-## Create profile
+### Create profile
 
 `sudo nano /home/[YOUR USER FOLDER NAME]/.unison/profile.prf`
 
@@ -56,11 +56,11 @@ auto = true
 
 --------------`
 
-# Create service to start it at the boot
+## Create service to start it at the boot
 
 `sudo nano /lib/systemd/system/unison.service`
 
-## Paste content:
+### Paste content:
 
 --------------
 
@@ -86,7 +86,7 @@ WantedBy=multi-user.target
 
 `sudo systemctl enable unison.service`
 
-# Control the app
+## Control the app
 
 ### Reload
 
