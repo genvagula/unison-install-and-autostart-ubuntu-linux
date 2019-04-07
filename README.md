@@ -37,20 +37,23 @@ root = /home/folder1
 root = /home/folder2
 
 #Paths to synchronize
-#files
+
+#Files
 path = file1.json
 path = file2.json
 path = file3.json
 
+#Set files or folders to ignore
 ignore = Name filename.txt
 
-#dirs
+#Dirs
 path = foldername
 
 #Logging
 log = true
 logfile = /home/logs/unison-sync-log.txt
 
+# Enable change monitoring for files and folder
 auto = true
 
 --------------
