@@ -1,8 +1,8 @@
 # Unison install and autostart Ubuntu 18.04 linux
 
-Simple and straightforward guide for unison install and set it up to watch changes in folders and start at the boot
+Simple and straightforward guide for Unison install and set it up to watch changes in folders and start at the boot
 
-## Install unison
+## Install Unison
 
 `sudo apt-get install -y ocaml opam`
 
