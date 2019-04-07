@@ -6,27 +6,27 @@ Simple and straightforward guide for unison install and set it up to watch chang
 
 `sudo apt-get install -y ocaml opam`
 
-opam init
+`opam init`
 
-git clone https://github.com/bcpierce00/unison.git
+`git clone https://github.com/bcpierce00/unison.git`
 
-cd unison
+`cd unison`
 
-git checkout 2.48.4
+`git checkout 2.48.4`
 
-make NATIVE=true UISTYLE=text
+`make NATIVE=true UISTYLE=text
 
-sudo install src/unison /usr/local/bin
+`sudo install src/unison /usr/local/bin`
 
-sudo install src/fsmonitor.py /usr/local/bin
+`sudo install src/fsmonitor.py /usr/local/bin`
 
-sudo pip install pyinotify
+`sudo pip install pyinotify`
 
 # Sync two folders with Unison
 
 ## Create profile
 
-sudo nano /home/[YOUR USER FOLDER NAME]/.unison/profile.prf
+`sudo nano /home/[YOUR USER FOLDER NAME]/.unison/profile.prf`
 
 - Create content like this:
 
@@ -56,9 +56,9 @@ auto = true
 
 --------------
 
-# ## Create service to start it at the boot
+# Create service to start it at the boot
 
-sudo nano /lib/systemd/system/unison.service
+`sudo nano /lib/systemd/system/unison.service
 
 ## Paste content:
 
@@ -84,36 +84,36 @@ WantedBy=multi-user.target
 
 ### Enable
 
-$ sudo systemctl enable unison.service
+`sudo systemctl enable unison.service`
 
 # Control the app
 
 ### Reload
 
-sudo systemctl daemon-reload
+`sudo systemctl daemon-reload`
 
 ### Start the server
 
-sudo systemctl start unison.service
+`sudo systemctl start unison.service`
 
 ### Stop the server
 
-sudo systemctl stop unison.service
+`sudo systemctl stop unison.service`
 
 ### Display the status
 
-systemctl status unison.service
+`systemctl status unison.service`
 
 - More detailed status with live logging view:
 
-journalctl -u unison.service -f
+`journalctl -u unison.service -f`
 
 
 ### Restart manually
 
-sudo systemctl restart unison.service
+`sudo systemctl restart unison.service`
 
 
 ### Disable from starting after reboot
 
-sudo systemctl disable unison.service
+`sudo systemctl disable unison.service`
