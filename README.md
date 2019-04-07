@@ -5,13 +5,13 @@ Simple and straightforward guide for unison install and set it up to watch chang
 ## Install unison
 
 $ sudo apt-get install -y ocaml opam
-$~$
+
 $ opam init
-$~$
+
 $ git clone https://github.com/bcpierce00/unison.git
-$~$
+
 $ cd unison
-$~$
+
 $ git checkout 2.48.4
 
 $ make NATIVE=true UISTYLE=text
